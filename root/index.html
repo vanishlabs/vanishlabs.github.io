@@ -4,87 +4,138 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>My Project Portfolio</title>
-    <meta
-      name="description"
-      content="A colorful, animated, and responsive portfolio website." />
+      content="width=device-width, initial-scale=1" />
+    <title>Your Portfolio</title>
     <link
       rel="stylesheet"
-      href="assets/css/style.css" />
+      href="style.css" />
+    <script
+      defer
+      src="main.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <h2 class="site-title"><a href="index.html">My Portfolio</a></h2>
-        <nav class="site-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="mailto:youremail@example.com">Contact</a></li>
-          </ul>
-        </nav>
-        <button
-          class="menu-toggle"
-          aria-label="Toggle Menu">
-          <span class="hamburger"></span>
-        </button>
-      </div>
+    <!-- Header and Navigation -->
+    <header>
+      <nav class="navbar">
+        <a
+          href="#"
+          class="logo"
+          >MyPortfolio</a
+        >
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Discover my projects and creative solutions.</p>
-        <a
-          href="#projects"
-          class="btn"
-          >View Projects</a
-        >
+    <section id="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Showcasing my projects on GitHub</p>
+      <a
+        href="#projects"
+        class="btn"
+        >View Projects</a
+      >
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I'm a developer passionate about building amazing projects. I love coding, design, and
+          creating interactive web experiences.
+        </p>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <main>
-      <section
-        id="projects"
-        class="projects">
-        <div class="container">
-          <h2>Featured Projects</h2>
-          <div class="projects-grid">
-            <!-- Sample Project Card -->
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="assets/images/project1.jpg"
-                  alt="Project One" />
-              </div>
-              <div class="project-info">
-                <h3>Project One</h3>
-                <p>A brief description of the project goes here.</p>
-                <a
-                  href="https://github.com/yourusername/project-one"
-                  class="btn"
-                  >View on GitHub</a
-                >
-              </div>
+    <section id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <!-- Example Project Card -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Project 1" />
             </div>
-            <!-- Add more project cards as needed -->
+            <div class="project-content">
+              <h3>Project One</h3>
+              <p>Brief description of project one.</p>
+              <a
+                href="https://github.com/yourusername/project-one"
+                target="_blank"
+                class="btn"
+                >View on GitHub</a
+              >
+            </div>
           </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3>Project Two</h3>
+              <p>Brief description of project two.</p>
+              <a
+                href="https://github.com/yourusername/project-two"
+                target="_blank"
+                class="btn"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required />
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="4"
+            required></textarea>
+          <button
+            type="submit"
+            class="btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer>
       <div class="container">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
       </div>
     </footer>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
